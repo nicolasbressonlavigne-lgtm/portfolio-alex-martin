@@ -14,6 +14,7 @@ Page de présentation d'un **profil fictif**, créée pour un exercice.
 | `style.css` | Mise en forme, illustration d'en-tête, adaptation au téléphone |
 | `script.js` | Ouverture et fermeture des détails de la réalisation |
 | `entrepot.svg` | Illustration fictive de l'en-tête |
+| `qr-linkedin.svg` | QR code de démonstration vers LinkedIn |
 
 ## Voir la page
 
