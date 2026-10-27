@@ -263,6 +263,75 @@ main {
   transform: rotate(45deg);
 }
 
+.parcours-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(220px, 0.85fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.parcours-texte h3 {
+  margin-top: 0;
+}
+
+.qr-block {
+  padding: 1rem 1rem 0.9rem;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.qr-block h3 {
+  margin: 0 0 0.75rem;
+  color: var(--primary-dark);
+  font-size: 0.95rem;
+}
+
+.qr-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem;
+  border-radius: 12px;
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.qr-link img {
+  display: block;
+  width: 100%;
+  max-width: 170px;
+  height: auto;
+  padding: 0.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.qr-link:hover .qr-caption,
+.qr-link:focus-visible .qr-caption {
+  text-decoration: underline;
+}
+
+.qr-link:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 3px;
+}
+
+.qr-caption {
+  font-size: 0.9rem;
+}
+
+.qr-block .qr-note {
+  margin: 0.6rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
 .skill-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -344,6 +413,17 @@ main {
 
 .site-footer p {
   margin: 0;
+}
+
+@media (max-width: 780px) {
+  .parcours-layout {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .qr-link img {
+    max-width: 150px;
+  }
 }
 
 @media (max-width: 640px) {
