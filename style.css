@@ -267,7 +267,7 @@ main {
   display: grid;
   grid-template-columns: minmax(0, 1.55fr) minmax(220px, 0.85fr);
   gap: 1.5rem;
-  align-items: center;
+  align-items: start;
 }
 
 .parcours-texte h3 {
